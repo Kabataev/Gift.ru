@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.card {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    content: "";
+    background-image: url(..//..//../assets/img/bg-pattern-card.svg);
+    height: 30%;
+  }
+
+  &__info {
+    margin-top: 7.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__location{
+    margin-top: 0;
+  }
+
+  &__img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-bottom: 2em;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &__user {
+    display: flex;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &__name {
+    margin: 0 15px 0 30px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__age {
+    margin-bottom: 20px;
+  }
+
+  &__stat {
+    width: 100%;
+    border-top: 1px solid grey;
+    text-align: center;
+  }
+
+  &__stat-inner {
+    padding: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+  }
+
+  &__stat-item {
+    text-align: center;
+  }
+
+  &__stat-count {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__stat-descr {
+    color: grey;
+  }
+
+  button{
+    margin: 1.5em;
+  }
+}
