@@ -8,6 +8,7 @@ import Layout from "./component/Layout/Layout";
 import NotFound from "./pages/NotFound/NotFound";
 import Registration from "./pages/Registration/Registration";
 import Entrance from "./pages/Entrance/Entrance";
+import Recovery from "./pages/Recovery/Recovery";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="registration" element={<Registration />} />
           <Route path="enter" element={<Entrance />} />
+          <Route path="recovery" element={<Recovery/>} />
           <Route path="*" element={<NotFound/>} />
         </Route>
       </Routes>

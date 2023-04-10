@@ -1,9 +1,150 @@
 .footer {
-  text-align: center;
-  padding: 2rem;
-  background: coral;
+  background: #413e70;
+  padding-bottom: 40px;
 
-  h1 {
-    font-size: 20px;
+  &__inner-block-1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 67px;
+  }
+
+  &__link {
+    line-height: 30px;
+  }
+
+  &__links-block {
+    display: flex;
+    grid-gap: 115px;
+  }
+
+  &__logo {
+    margin-bottom: 44px;
+  }
+
+  &__cards {
+    display: flex;
+    grid-gap: 15px;
+    margin-top: 44px;
+  }
+
+  &__logo-block {
+    p {
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #dadada;
+    }
+  }
+
+  &__card:nth-child(1) {
+    width: 56px;
+    padding: 0 7px;
+    border-radius: 5px;
+    background: #b6b3e4;
+    overflow: hidden;
+
+    img {
+      margin-top: 3px;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+
+  &__user-interface {
+    display: flex;
+    grid-gap: 32px;
+    margin-bottom: 34px;
+  }
+
+  #img-id {
+    fill: #ffffff;
+  }
+
+  &__email-phone {
+    display: block;
+    text-align: left;
+    margin-top: 34px;
+    margin-left: 30px;
+    line-height: 30px;
+  }
+
+  &__phone {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 0;
+      background-image: url(..//../assets/img/footerPhone-icon.svg);
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__email {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 5px;
+      background-image: url(..//../assets/img/footerEmail-icon.svg);
+      width: 20px;
+      height: 14px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__socialNetworks {
+    display: flex;
+    grid-gap: 33px;
+    margin-top: 20px;
+  }
+
+  &__socialNetworks-block {
+    width: 32px;
+    height: 32px;
+    background: #fefefe;
+    border-radius: 50%;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__btn-up {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    transition: .3s ease-in;
+
+    &::before{
+      content: '';
+      width: 15px;
+      height: 20px;
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+      background-image: url(./../../assets/img/arrow-up.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
