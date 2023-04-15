@@ -9,20 +9,21 @@ import facebookIcon from "..//..//assets/img/facebook-icon.png";
 import { useState } from "react";
 
 function Footer() {
+  const [, setScroll] = useState(0);
 
-  const[ , setScroll] = useState(0);
-
-  function handleScrollUp(){
-    setScroll(()=>{
-      window.scrollTo(0,0);
+  function handleScrollUp() {
+    setScroll(() => {
+      window.scrollTo(0, 0);
     });
   }
-  
+
   return (
     <footer className="footer">
-      <div className="footer__inner-block-1">
+      <div className="footer__inner-block">
         <div className="footer__logo-block">
-          <img className="footer__logo" src={footerLogo} alt="" />
+          <NavLink to="/">
+            <img className="footer__logo" src={footerLogo} alt="" />
+          </NavLink>
 
           <ul className="footer__cards">
             <li className="footer__card">
@@ -51,7 +52,6 @@ function Footer() {
                 <NavLink to="/articles">Статьи</NavLink>
               </li>
             </ul>
-            
           </div>
           <div className="footer__block-link">
             <ul className="footer__link">
@@ -210,7 +210,10 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <p onClick={handleScrollUp} className="footer__btn-up">  Вверх</p>
+      <p onClick={handleScrollUp} className="footer__btn-up">
+        {" "}
+        Вверх
+      </p>
     </footer>
   );
 }

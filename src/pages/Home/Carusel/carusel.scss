@@ -1,35 +1,35 @@
-.carusel{
+.carusel {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 
-  &__all-items{
-    display: flex;
-    align-items: center;
+  &__all-items {
     user-select: none;
     height: 100%;
-    
+    display: flex;
+    width: 100%;
+    transition: .3s ease-in-out;
   }
 
-  &__window{
+  &__window {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+  }
+ 
+  &__arrow-right{
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    img{
+      transform: rotate(180deg);
+    }
   }
 
-  &__inner{
-    width: 450px;
-    height: 150px;
-
-    .item-1{
-      background: cornflowerblue;
-    }
-
-    .item-2{
-      background: coral;
-    }
-
-    .item-3{
-      background: rgb(56, 216, 54);
-    }
+  &__arrow-left{
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
 }

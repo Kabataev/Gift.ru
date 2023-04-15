@@ -1,11 +1,18 @@
 .footer {
   background: #413e70;
   padding-bottom: 40px;
+  margin-top: auto;
 
-  &__inner-block-1 {
+  &__inner-block {
+    width: 1400px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    grid-column-gap: 200px;
     padding-top: 67px;
+  }
+
+  &__container{
   }
 
   &__link {
@@ -37,14 +44,9 @@
   }
 
   &__card:nth-child(1) {
-    width: 56px;
-    padding: 0 7px;
-    border-radius: 5px;
-    background: #b6b3e4;
-    overflow: hidden;
 
     img {
-      margin-top: 3px;
+      margin-top: -3px;
     }
   }
 

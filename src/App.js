@@ -1,27 +1,30 @@
+import { Routes, Route } from "react-router-dom";
 import React from "react";
 import "./app.scss";
-import Home from "./pages/Home/Home";
-import Contact from "./pages/Contact/Contact";
-import About from "./pages/About/About";
-import { Routes, Route } from "react-router-dom";
+import {
+  Home,
+  Recovery,
+  Entrance,
+  Registration,
+  NotFound,
+  About,
+  Contact,
+} from "./pages";
 import Layout from "./component/Layout/Layout";
-import NotFound from "./pages/NotFound/NotFound";
-import Registration from "./pages/Registration/Registration";
-import Entrance from "./pages/Entrance/Entrance";
-import Recovery from "./pages/Recovery/Recovery";
+
 
 function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="registration" element={<Registration />} />
           <Route path="enter" element={<Entrance />} />
-          <Route path="recovery" element={<Recovery/>} />
-          <Route path="*" element={<NotFound/>} />
+          <Route path="recovery" element={<Recovery />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </div>
